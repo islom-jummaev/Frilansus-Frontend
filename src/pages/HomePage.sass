@@ -1,0 +1,498 @@
+// - ================================= Billboard section starts here
+@import '../../src/assets/styles/variables'
+@import '../assets/js/libs/ion/ion.rangeSlider.min.css'
+@import '../../src/assets/styles/fonts'
+@import '../../src/assets/styles/main'
+
+*
+    box-sizing: border-box
+    // margin: 0
+    // padding: 0
+p, h1
+    margin: 0
+    padding: 0
+body 
+    font-family: 'Inter'
+
+.billboard
+    display: flex
+    justify-content: space-between
+    margin-top: 57px
+
+    .billboard__content
+        padding: 49px 0 60px 32px
+
+    .billboard__text
+
+        &--small
+            font-size: 18px
+            color: #C2C5C7
+
+        &--big
+            margin: 0
+            color: $defaultBlue
+            font-size: 72px
+            font-weight: 600
+
+            .billboard__text--bigSom
+                font-size: 24px
+                margin-left: -15px
+                font-weight: 600
+
+    .billboard__left
+        width: 808px
+        background-color: #fff
+        border-radius: 8px
+
+    .billboard__right
+        width: 572px
+        background-color: #fff
+        border-radius: 8px
+
+// - ================================= Billboard section ends here
+
+// - ================================= Column content section starts here
+
+// - ================================= Column content section ends here
+
+// - ================================= order-section starts here
+.three-wrapper
+    display: flex
+    justify-content: space-between
+    margin: 55px 0 334px 0
+
+.order-section
+    width: 335px
+    background-color: #fff
+    border-radius: 8px
+
+    .order__type
+        padding: 24px 24px 0 24px
+
+        .order__type--heading
+            display: flex
+            justify-content: space-between
+            vertical-align: center
+
+            .order__type--htext
+                font-weight: 600
+                font-size: $ordersecheading
+                color: $redfoxBlack
+                margin-bottom: 23px
+
+            .order__type--img
+                margin-bottom: 15px
+
+        .order__type--items
+            width: 271px
+            margin: 0 auto
+
+            .star__img
+                margin-right: 3px
+
+                &--gray
+                    margin-right: 3px
+                    height: 20px
+                    width: 20px
+
+            .items__icon
+                margin-right: 8px
+
+            .order__items
+                ul
+                    margin: 0
+                    padding: 0
+
+            .order__items--li
+                display: flex
+                align-items: center
+                justify-content: space-between
+                margin-bottom: 18px
+                list-style-type: none
+
+            .order__items--checkbox
+                width: 20px
+                height: 20px
+                margin-right: 8px
+
+            .items__text
+                display: flex
+                font-size: 16px
+                font-weight: 400
+                color: #1C1C1F
+                // margin-right: 148px
+
+            .items__text--right
+                font-family: Inter
+                font-weight: 400
+                font-size: 16px
+                color: #1C1C1F
+
+            .items__small-text
+                display: flex
+                font-size: 12px
+                font-weight: 400
+                color: #D9DCDD
+                // margin-right: 148px
+
+            .items__small-text--right
+                font-family: Inter
+                font-weight: 400
+                font-size: 12px
+                color: #D9DCDD
+
+            .items__stext
+                font-size: 12px
+                font-weight: 400
+                vertical-align: center
+
+                &--blue
+                    color: $defaultBlue
+                    font-size: 12px
+                    // right: 5
+
+                    // margin-left: 160px
+
+                &--gray
+                    color: $orderSecGray
+                    font-size: 12px
+                    // margin-left: 175px
+
+    .order__hr
+        outline: none
+        border: 1px solid #D9DCDD
+        margin: 16px auto 0
+
+        background-color: #D9DCDD
+        width: 287px
+        // text-align: center
+
+    .order__btn
+        width: 100%
+        background-color: $defaultBlue
+        padding: 10px 0 10px 0
+        outline: none
+        border-radius: 4px
+        border: none
+        color: #fff
+        font-size: 18px
+
+    .order__btn:hover
+        background-color: #66C7FF
+
+    .order__btn--footer
+        margin-top: 24px
+        width: 100%
+        background-color: $defaultBlue
+        padding: 10px 0 10px 0
+        outline: none
+        border-radius: 4px
+        border: none
+        color: #fff
+        font-size: 18px
+
+        .fonar-icon
+            text-align: center
+            margin-right: 9px
+            margin-bottom: -1px
+
+    .order__btn--footer:hover
+        background-color: #66C7FF
+
+    //- eaaeea
+
+    .white__btn-white
+        width: 100%
+        background-color: #fff
+        padding: 10px 0 10px 0
+        outline: none
+        border-radius: 4px
+        margin: 16px 0 24px 0
+        border: 1px solid #C2C5C7
+        color: #C2C5C7
+        font-size: 18px
+
+        .refresh-icon
+            margin-right: 9px
+            margin-bottom: -3px
+
+    .white__btn-white:hover
+        border: 1px solid #00A2FF
+        color: #00A2FF
+
+        .refresh-icon
+            transition: 0.1
+            filter: invert(55%) sepia(72%) saturate(4590%) hue-rotate(177deg) brightness(102%) contrast(106%);
+
+
+.main-section
+    width: 690px
+
+    .search__section
+        width: 100%
+        border-radius: 8px
+
+        .search__form
+            position: relative
+
+            .search__button
+                position: absolute
+                z-index: 2
+                margin-top: 7px
+                margin-left: 642px
+                border: none
+                background-color: #fff
+                .s-search-icon
+                    padding: 0
+
+        .search__input
+            position: relative
+            width: 100%
+            border: none
+            padding: 16px 0 16px 16px
+            border-radius: 8px
+            font-size: 16px
+            font-weight: 400
+
+        .search__input:focus
+            border: 1px solid #00A2FF
+            .s-search-icon
+                background-color: #00a2ff
+                color: #00a2ff
+
+
+            
+
+    .vacancy-section
+        width: 100%
+        border-radius: 8px
+        background-color: #fff
+        margin-top: 24px
+
+        .twenty-percent
+            font-size: 14px
+            font-weight: 500
+            color: #C2C5C7
+            line-height: 18px
+
+        .clock-icon
+            margin-right: 12px
+
+        .verified-icon, .info-icon
+            margin-right: 9px
+
+        .vacancy-content
+            padding: 16px
+
+            .vacancy-heading
+                display: flex
+                justify-content: space-between
+                align-items: center
+                margin-bottom: 2px
+
+                .vacancy-heading__id
+                    font-size: 12px
+                    font-weight: 500
+                    color: #c2c5c7
+
+                .vacancy-heading__top-right
+                    display: flex
+
+                .corona-icon
+                    margin-right: 5px
+                .premium
+                    font-size: 14px
+                    font-weight: 500
+                    color: #293446
+
+            .vacancy-inner-heading
+                display: flex
+                justify-content: space-between
+                font-size: 26px
+                font-weight: 600
+                color: #1c1c1c
+
+            .vacancy-customer
+                display: flex
+                align-items: center
+                margin-top: 18px
+
+                .vacancy-customer__name
+                    font-size: 16px
+                    color: #1C1C1F
+                    font-weight: 500
+                    margin-right: 16px
+                    margin-left: 8px
+
+            .vacancy-description
+                margin-top: 16px
+                width: 650px
+
+                .vacancy-description__text
+                    font-size: 14px
+                    color: #435167
+                    line-height: 19.6px
+
+            .vacancy-footer
+                display: flex
+                justify-content: space-between
+                align-items: center
+                margin-top: 16px
+
+                .vacancy-footer__left
+                    display: flex
+                    align-items: center
+
+                    .hot-icon
+                        margin-right: 12px
+
+                    .vacancy-footer__label
+                        font-size: 12px
+                        font-weight: 400
+                        color: #788497
+                        line-height: 14.52px
+
+                    .vacancy-footer__dates
+                        margin-right: 30px
+                        list-style-type: none
+                        font-size: 14px
+                        font-weight: 500
+                        color: #1C1C1F
+                        line-height: 16.94px
+
+                    .vacancy-footer__date
+                        font-family: 'Inter'
+                        font-size: 14px
+                        font-weight: 500
+                        color: #1C1C1F
+                        line-height: 16.94px
+
+                .vacancy-footer__right
+                    display: flex
+                    align-items: center
+                    justify-content: flex-end
+
+                    .vacancy-footer__verified
+                        font-size: 14px
+                        font-weight: 500
+                        line-height: 20px
+                        color: #1C1C1F
+
+                    .not-verified
+                        color: #788497 !important
+
+    .pagination-wrapper
+        display: flex
+        justify-content: space-between
+        align-items: center
+        position: absolute
+        margin-top: 200px
+        width: 690px
+
+        .pagination
+            width: 538px
+            text-align: center
+            
+            .pagination__item
+                list-style-type: none
+
+                .pagination__link
+                    font-size: 12px
+                    font-weight: 500
+                    color: #00A2FF
+                    text-decoration: none
+                    background-color: #fff
+                    padding: 10px 13px
+                    border-radius: 4px
+
+                    &--active
+                        background-color: #00A2FF
+                        color: #fff   
+
+                
+                .pagination__link:hover
+                    border: 1px solid #00A2FF   
+
+
+.right-page
+    background-color: #fff
+    width: 335px
+    height: 445px
+    border-radius: 8px
+
+    .right-page-wrapper
+        padding: 24px 24px 0 24px
+        margin: 0 auto
+
+        .banner__text
+            font-size: 22px
+            font-weight: 600
+            margin-bottom: 23px
+
+        .banner__btn
+            width: 100%
+            background-color: $defaultBlue
+            padding: 10px 0 10px 0
+            outline: none
+            border-radius: 4px
+            border: none
+            color: #fff
+            font-size: 18px
+            margin-top: 15px
+
+        .banner__btn:hover
+            background-color: #66C7FF
+
+// for changing range slider's style
+
+.irs-grid 
+    display: none !important
+// .irs-from 
+//     display: none !important
+// .irs-to
+//     display: none !important
+
+// .irs-bar 
+//     background: #00A2FF !important
+//     border: none !important
+
+
+.irs-min 
+    display: none !important
+.irs-max
+    display: none !important
+
+.irs-single
+    background: #00A2FF !important
+
+.irs-from
+    background: #00A2FF !important
+    font-size: 16px !important
+
+.irs-to
+    background:#00A2FF !important
+    font-size: 16px !important
+
+// .irs-handle 
+//     background-color: #fff !important
+//     border-radius: 50%
+
+.irs-line
+    box-shadow: 0px 1px 1.5px 0px #0A3A56 10% inset !important
+    height: 8px !important
+    border: none !important
+        
+// .irs-bar 
+//     box-shadow: none !important 
+
+
+.irs-handle
+    top: 28px !important
+    background: #fff !important
+    box-shadow: 0px 1.5px 5px 0px #074177 30% !important
+    border: none !important
+    width: 20px !important
+    height: 20px !important
+
+
+// range slider's style changing ends

@@ -1,0 +1,199 @@
+@mixin TextFont($fw, $fs, $lh)
+     font-family: Inter
+     font-style: normal
+     font-weight: $fw
+     font-size: $fs
+     line-height: $lh
+.middle 
+     .dizayn_architect
+          .container
+               display: flex
+               justify-content: space-between 
+               .dizayn_architect--desc
+                    width: 1045px
+                    .dezayn_architect__header 
+                         width: 100%
+                         background: #FFFFFF
+                         border-radius: 8px
+                         margin-top: 56px
+                         padding: 33px 32px
+                         .dizayn_architect__header--date
+                              display: flex
+                              justify-content: space-between
+                              @include TextFont($fw: 500, $fs: 14px, $lh: 18px)
+                              color: #C2C5C7
+                         .dizayn_architect__header--date--1
+                              display: flex
+                              justify-content: space-between
+                              @include TextFont($fw: 500, $fs: 30px, $lh: 36px)
+                              color: #1C1C1F      
+                    .dizayn_architect__main
+                         width: 100%
+                         background: #FFFFFF
+                         border-radius: 8px
+                         margin-top: 20px
+                         padding: 24px 32px
+                         margin-bottom: 180px 
+                         h1
+                              @include TextFont($fw: 500, $fs: 18px, $lh: 22px)
+                         h2    
+                              @include TextFont($fw: 700, $fs: 20px, $lh: 24px)
+                         .dizayn_architect__main-hero
+                              @include TextFont($fw: 600, $fs: 14px, $lh: 24px)
+                         p 
+                              @include TextFont($fw: 400, $fs: 14px, $lh: 24px)
+                         .dizayn-web
+                              @include TextFont($fw: 400, $fs: 14px, $lh: 24px)
+                              list-style-type: none
+                         .dizayn__arctiv 
+                              margin-top: 24px
+                              background: #FFFFFF
+                              border-radius: 8px
+                              .dizayner-ar
+                                   display: flex
+                                   .dizayner-art 
+                                        @include TextFont($fw: 400, $fs: 12px, $lh: 15px)
+                                        color: #788497
+                                   .dizayner-art-1 
+                                        @include TextFont($fw: 400, $fs: 12px, $lh: 15px)
+                                        color: #788497
+                                        margin-left: 40px
+                                   .dizayner-art-2 
+                                        @include TextFont($fw: 400, $fs: 12px, $lh: 15px)
+                                        color: #788497
+                                        margin-left: 34px
+                              .dizayner__vert 
+                                   display: flex
+                                   .dizayner-portfoliya 
+                                        @include TextFont($fw: 500, $fs: 14px, $lh: 17px)
+                                        color: #1C1C1F
+                                   .dizayner-portfoliya-deta 
+                                        @include TextFont($fw: 500, $fs: 14px, $lh: 17px)
+                                        color: #1C1C1F
+                                        margin-left:  32px
+                                   .dizayner-portfoliya-copaneshn 
+                                        @include TextFont($fw: 500, $fs: 14px, $lh: 17px)
+                                        color: #E32B0C
+                                        margin-left:  32px
+               .designer-business 
+                    .designer-business-bowler
+                         width: 335px
+                         background: #FFFFFF
+                         border-radius: 8px
+                         margin-top: 56px
+                         padding: 24px 16px
+                         margin-left: 20px
+                         .designer-company 
+                              @include TextFont($fw: 500, $fs: 24px, $lh: 29px)
+                              color: #41424D
+                         .Web-designer
+                              display: flex
+                              margin-top: 23px 
+                              .diz
+                                   margin-top: 25px
+                                   margin-left: 16px
+                                   @include TextFont($fw: 500, $fs: 16px, $lh: 19px)
+                         .graphic-designer
+                              display: inline-flex
+                              margin-top: 25.5px
+                              .dizayner-order
+                                   margin-left: 9px
+                                   @include TextFont($fw: 400, $fs: 14px, $lh: 20px)
+                                   color: #41424C
+@media screen and ( max-width:1024px  )
+     .middle 
+          .dizayn_architect
+               .container
+                    width: 1024px
+                    .dizayner-order 
+                    display: block 
+                    margin: 0            
+                    .dizayn_architect--desc
+                         display: flex
+                         .dezayn_architect__header 
+                              width: 100%
+                              background: #FFFFFF
+                              border-radius: 8px
+                              margin-top: 32px
+                              padding: 33px 32px
+                              .dizayn_architect__header--date
+                                   display: flex
+                                   justify-content: space-between
+                                   @include TextFont($fw: 500, $fs: 14px, $lh: 18px)
+                                   color: #C2C5C7
+                              .dizayn_architect__header--date--1
+                                   display: flex
+                                   justify-content: space-between
+                                   @include TextFont($fw: 500, $fs: 24px, $lh: 29px)
+                                   color: #1C1C1F   
+                              .Numebr  
+                                   @include TextFont($fw: 600, $fs: 24px, $lh: 29px)
+                         .dizayn_architect__main
+                              width: 100%
+                              background: #FFFFFF
+                              border-radius: 8px
+                              margin-top: 16px
+                              padding: 24px 32px
+                              margin-bottom: 1px
+                              h1
+                                   @include TextFont($fw: 500, $fs: 18px, $lh: 22px)
+                              h2    
+                                   @include TextFont($fw: 700, $fs: 20px, $lh: 24px)
+                              .dizayn_architect__main-hero
+                                   @include TextFont($fw: 600, $fs: 14px, $lh: 24px) 
+                              .dizayner-web
+                                   @include TextFont($fw:400 , $fs: 14px, $lh: 24px)
+                                   list-style-type: none 
+                              p 
+                                   @include TextFont($fw: 400, $fs: 14px, $lh: 24px)
+                              .dizayn__arctiv 
+                                   margin-top: 24px
+                                   background: #FFFFFF
+                                   border-radius: 8px
+                                   .dizayner-ar
+                                        .dizayner-art 
+                                             @include TextFont($fw: 400, $fs: 12px, $lh: 15px)
+                                             color: #788497
+                                        .dizayner-art-1 
+                                             @include TextFont($fw: 400, $fs: 12px, $lh: 15px)
+                                             color: #788497
+                                             margin-left: 40px
+                                        .dizayner-art-2 
+                                             @include TextFont($fw: 400, $fs: 12px, $lh: 15px)
+                                             color: #788497
+                                             margin-left: 34px
+                                   .dizayner__vert 
+                                        .dizayner-portfoliya 
+                                             @include TextFont($fw: 500, $fs: 14px, $lh: 17px)
+                                             color: #1C1C1F
+                                        .dizayner-portfoliya-deta 
+                                             @include TextFont($fw: 500, $fs: 14px, $lh: 17px)
+                                             color: #1C1C1F
+                                             margin-left:  32px
+                                        .dizayner-portfoliya-copaneshn 
+                                             @include TextFont($fw: 500, $fs: 14px, $lh: 17px)
+                                             color: #E32B0C
+                                             margin-left:  32px
+                    .designer-business  
+                         .designer-business-bowler
+                              width: 100%
+                              background: #FFFFFF
+                              border-radius: 8px
+                              margin-top: 16px
+                              padding: 24px 16px 
+                              .designer-company 
+
+                                  display: none
+                              .Web-designer
+                                   margin-top: 23px 
+                                   .diz
+                                        margin-top: 25px
+                                        margin-left: 16px
+                                        @include TextFont($fw: 500, $fs: 16px, $lh: 19px)
+                              .graphic-designer
+                                   display: inline-flex
+                                   margin-top: 25.5px
+                                   .dizayner-order
+                                        margin-left: 9px
+                                        @include TextFont($fw: 400, $fs: 14px, $lh: 20px)
+                                        color: #41424C

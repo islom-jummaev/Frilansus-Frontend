@@ -1,0 +1,527 @@
+extends ../layout/main
+
+block middle
+        //- =================     Billboard page starts here =================================== //
+        .container
+            .billboard
+                .billboard__left
+                    .billboard__content
+                        p.billboard__text--small Tizim orqali frilanserlarning umumiy daromadi:
+                        h1.billboard__text--big 300 000 000 
+                            small.billboard__text--bigSom so'm
+
+                .billboard__right
+                    .billboard__content
+                        p.billboard__text--small Topshirilgan ishlar soni:
+                        h1.billboard__text--big 903
+                            small.billboard__text--bigSom(style="margin-left: 7px") ta
+
+
+       
+            .column-container
+                //- =================     order-section starts here ===================================//
+                .three-wrapper
+                    .order-section
+                        .order__type
+                            .order__type--heading 
+                                .order__type--htext Buyurtma turi
+                                img(src="assets/images/up-pointer.svg" alt="asdasd" class="order__type--img")
+                            
+                            .order__type--items
+                                .order__items
+                                    ul 
+                                        li.order__items--li
+                                            
+                                            //- img(src="assets/images/v.svg", alt="box icon" class="order__items--checkbox")//
+                                            label(for="text" class="items__text") 
+                                                input(type="checkbox", name="checkbox" class="order__items--checkbox")
+                                                | Barchasi
+                                            span.items__stext--blue 3549
+            
+                                        li.order__items--li
+                                            label(for="text" class="items__text") 
+                                                input(type="checkbox", name="checkbox" class="order__items--checkbox")
+                                                | Polygraphy & Print
+                                            span.items__stext--gray 168
+            
+                                        li.order__items--li
+                                            label(for="text" class="items__text") 
+                                                input(type="checkbox", name="checkbox" class="order__items--checkbox")
+                                                | Packaging design
+                                            span.items__stext--blue 243
+            
+                                        li.order__items--li
+                                            label(for="text" class="items__text") 
+                                                input(type="checkbox", name="checkbox" class="order__items--checkbox")
+                                                | UX/UI Web design
+                                            span.items__stext--gray 561
+            
+                                        li.order__items--li
+                                            label(for="text" class="items__text") 
+                                                input(type="checkbox", name="checkbox" class="order__items--checkbox")
+                                                | Logo & Branding
+                                            span.items__stext--gray 894
+            
+                                        li.order__items--li
+                                            label(for="text" class="items__text") 
+                                                input(type="checkbox", name="checkbox" class="order__items--checkbox")
+                                                | SMM design
+                                            span.items__stext--gray 821
+            
+                                        li.order__items--li
+                                            label(for="text" class="items__text") 
+                                                input(type="checkbox", name="checkbox" class="order__items--checkbox")
+                                                | Naming
+                                            span.items__stext--gray 82
+            
+                                        li.order__items--li
+                                            label(for="text" class="items__text") 
+                                                input(type="checkbox", name="checkbox" class="order__items--checkbox")
+                                                | Architecture design
+                                            span.items__stext--gray 27
+            
+                                        li.order__items--li
+                                            label(for="text" class="items__text") 
+                                                input(type="checkbox", name="checkbox" class="order__items--checkbox")
+                                                | Fashion design
+                                            span.items__stext--gray 3
+            
+                                        li.order__items--li
+                                            label(for="text" class="items__text") 
+                                                input(type="checkbox", name="checkbox" class="order__items--checkbox")
+                                                | 3D graphic design
+                                            span.items__stext--gray 64
+            
+                                        li.order__items--li
+                                            label(for="text" class="items__text") 
+                                                input(type="checkbox", name="checkbox" class="order__items--checkbox")
+                                                | Motion design
+                                            span.items__stext--gray 90    
+
+                            hr.order__hr
+
+                        .order__type
+                            .order__type--heading 
+                                h1.order__type--htext Buyurtma muddati
+                                img(src="assets/images/up-pointer.svg" alt="asdasd" class="order__type--img")
+                            
+                            .order__type--items
+                                .order__items
+                                    input.js-range-slider(type="text" name="my_range" value="" data-type="double" data-min="1" data-max="60" data-from="18" data-to="48" data-grid="true")
+                                    ul 
+                                        li.order__items--li
+                                            label(for="text" class="items__small-text") 1 kun
+                                            label.items__small-text--right 60 kun
+                                    //-input.js-range-slider(type="text" name="my_range" value="" data-type="double" data-min="1" data-max="60" data-from="18" data-to="48" data-grid="true")
+                                    button.order__btn Saralash
+                            
+                            hr.order__hr
+
+                        .order__type
+                            .order__type--heading 
+                                h1.order__type--htext Buyurtma budgeti
+                                img(src="assets/images/up-pointer.svg" alt="asdasd" class="order__type--img")
+                            
+                            .order__type--items
+                                .order__items
+                                    input.js-range-slider-money(type="text" name="my_range" value="" data-type="double" data-min="100000" data-max="10000000" data-from="600000" data-to="1800000" data-grid="true")
+                                    ul 
+                                        li.order__items--li
+                                            label(for="text" class="items__small-text") 100 000 so'm
+                                            label.items__small-text--right 10 000 000 so'm
+                                    //-input.js-range-slider(type="text" name="my_range" value="" data-type="double" data-min="100000" data-max="10000000" data-from="600000" data-to="1800000" data-grid="true")
+                                    button.order__btn Saralash
+
+                            hr.order__hr   
+
+            
+                        .order__type
+                            .order__type--heading 
+                                h1.order__type--htext Mijozlar darajasi
+                                img(src="assets/images/up-pointer.svg" alt="asdasd" class="order__type--img")
+                            
+                            .order__type--items
+                                .order__items
+                                    ul 
+                                        li.order__items--li
+                                            label(for="text" class="items__text") 
+                                                input(type="checkbox", name="checkbox" class="order__items--checkbox")
+                                                | Barchasi
+                                        li.order__items--li
+                                            label(for="text" class="items__text") 
+                                                input(type="checkbox", name="checkbox" class="order__items--checkbox")
+                                                img(src="assets/images/star.svg", alt="star pic" class="star__img")
+                                                img(src="assets/images/star.svg", alt="star pic" class="star__img")
+                                                img(src="assets/images/star.svg", alt="star pic" class="star__img")
+                                                img(src="assets/images/star.svg", alt="star pic" class="star__img")
+                                                img(src="assets/images/star.svg", alt="star pic" class="star__img")
+                                        li.order__items--li
+                                            label(for="text" class="items__text") 
+                                                input(type="checkbox", name="checkbox" class="order__items--checkbox")
+                                                img(src="assets/images/star.svg", alt="star pic" class="star__img")
+                                                img(src="assets/images/star.svg", alt="star pic" class="star__img")
+                                                img(src="assets/images/star.svg", alt="star pic" class="star__img")
+                                                img(src="assets/images/star.svg", alt="star pic" class="star__img")
+                                                img(src="assets/images/star-gray.svg", alt="star pic" class="star__img--gray")
+                                        li.order__items--li
+                                            label(for="text" class="items__text") 
+                                                input(type="checkbox", name="checkbox" class="order__items--checkbox")
+                                                img(src="assets/images/star.svg", alt="star pic" class="star__img")
+                                                img(src="assets/images/star.svg", alt="star pic" class="star__img")
+                                                img(src="assets/images/star.svg", alt="star pic" class="star__img")
+                                                img(src="assets/images/star-gray.svg", alt="star pic" class="star__img--gray")
+                                                img(src="assets/images/star-gray.svg", alt="star pic" class="star__img--gray")
+                                        li.order__items--li
+                                            label(for="text" class="items__text") 
+                                                input(type="checkbox", name="checkbox" class="order__items--checkbox")
+                                                img(src="assets/images/star.svg", alt="star pic" class="star__img")
+                                                img(src="assets/images/star.svg", alt="star pic" class="star__img")
+                                                img(src="assets/images/star-gray.svg", alt="star pic" class="star__img--gray")
+                                                img(src="assets/images/star-gray.svg", alt="star pic" class="star__img--gray")
+                                                img(src="assets/images/star-gray.svg", alt="star pic" class="star__img--gray")
+                                        li.order__items--li
+                                            label(for="text" class="items__text") 
+                                                input(type="checkbox", name="checkbox" class="order__items--checkbox")
+                                                img(src="assets/images/star.svg", alt="star pic" class="star__img")
+                                                img(src="assets/images/star-gray.svg", alt="star pic" class="star__img--gray")
+                                                img(src="assets/images/star-gray.svg", alt="star pic" class="star__img--gray")
+                                                img(src="assets/images/star-gray.svg", alt="star pic" class="star__img--gray")
+                                                img(src="assets/images/star-gray.svg", alt="star pic" class="star__img--gray")
+                                        li.order__items--li
+                                            label(for="text" class="items__text") 
+                                                input(type="checkbox", name="checkbox" class="order__items--checkbox")
+                                                | Yangi qo'shilgan
+                            
+                            hr.order__hr        
+
+                        .order__type
+                            .order__type--heading 
+                                h1.order__type--htext Mijozlar farqi
+                                img(src="assets/images/up-pointer.svg" alt="asdasd" class="order__type--img")
+                            
+                            .order__type--items
+                                .order__items
+                                    ul 
+                                        li.order__items--li
+                                            
+                                            //- img(src="assets/images/v.svg", alt="box icon" class="order__items--checkbox")//
+                                            label(for="text" class="items__text") 
+                                                input(type="checkbox", name="checkbox" class="order__items--checkbox")
+                                                | Barchasi
+                                            span.items__stext--blue 3549
+            
+                                        li.order__items--li
+                                            label(for="text" class="items__text") 
+                                                input(type="checkbox", name="checkbox" class="order__items--checkbox")
+                                                | Premium
+                                            span.items__stext--gray 1276
+            
+                                        li.order__items--li
+                                            label(for="text" class="items__text") 
+                                                input(type="checkbox", name="checkbox" class="order__items--checkbox")
+                                                | Start
+                                            span.items__stext--blue 2358   
+                            
+                            hr.order__hr                   
+                                        
+                            button.order__btn--footer 
+                                img(src="assets/images/fonar.svg", alt="star pic" class="fonar-icon")
+                                | Saralash
+
+                            button.white__btn-white 
+                                img(src="assets/images/refresh.svg", alt="star pic" class="refresh-icon")
+                                | Saralash
+                
+                    .main-section
+                        .search__section
+                            form.search__form
+                                button.search__button 
+                                    img(src="assets/images/search-icon.svg", alt="star pic" class="s-search-icon")
+                                input(type="text" class="search__input" placeholder="Qidiruv")
+                        
+                        .vacancy-section.pin
+                            .vacancy-content 
+                                .vacancy-heading 
+                                    p.vacancy-heading__id ID:4256
+                                    span.vacancy-heading__top-right
+                                        img(src="assets/images/corona.svg", alt="corona" class="corona-icon")
+                                        span.premium Premium
+
+                                .vacancy-inner-heading
+                                    p.vacancy-inner-heading__job Architecture design
+                                    p.vacancy-inner__money 200 000 so'm
+
+                                .vacancy-customer
+                                    img(src="assets/images/palace.svg", alt="corona" class="palace-icon")
+                                    p.vacancy-customer__name Qashqadaryo viloyati hokimiyati
+                                    img(src="assets/images/three-stars.svg", alt="corona" class="stars-icon")
+                                
+                                .vacancy-description 
+                                    p.vacancy-description__text Kompaniyasining asosiy faoliyat turi kompyuter qurilmalari, maishiy texnika va elektronikaning chakana savdosini tashkil etish hisoblanadi.
+
+                                .vacancy-footer
+                                    .vacancy-footer__left
+                                        img(src="assets/images/hot.svg", alt="corona" class="hot-icon") 
+                                        
+                                        ul.vacancy-footer__dates  
+                                            li.vacancy-footer__label Start berildi
+                                            li.vacancy-footer__date 24.07.2020
+                                        ul.vacancy-footer__dates  
+                                            li.vacancy-footer__label Muddat
+                                            li.vacancy-footer__date 1 hafta
+                                        ul.vacancy-footer__dates  
+                                            li.vacancy-footer__label Qoldi
+                                            li.vacancy-footer__date 10 soat
+
+                                    .vacancy-footer__right 
+                                        img(src="assets/images/verified.svg", alt="corona" class="verified-icon") 
+                                        label.vacancy-footer__verified To'lov kafolatlangan
+
+                        .vacancy-section
+                            .vacancy-content 
+                                .vacancy-heading 
+                                    p.vacancy-heading__id ID:4256
+                                    span.vacancy-heading__top-right
+                                        span.twenty-percent -20% Start
+
+                                .vacancy-inner-heading
+                                    p.vacancy-inner-heading__job Architecture design
+                                    p.vacancy-inner__money 200 000 so'm
+
+                                .vacancy-customer
+                                    img(src="assets/images/palace.svg", alt="corona" class="palace-icon")
+                                    p.vacancy-customer__name Qashqadaryo viloyati hokimiyati
+                                    img(src="assets/images/three-stars.svg", alt="corona" class="stars-icon")
+                                
+                                .vacancy-description 
+                                    p.vacancy-description__text Kompaniyasining asosiy faoliyat turi kompyuter qurilmalari, maishiy texnika va elektronikaning chakana savdosini tashkil etish hisoblanadi.
+
+                                .vacancy-footer
+                                    .vacancy-footer__left
+                                        img(src="assets/images/clock.svg", alt="corona" class="clock-icon") 
+                                        
+                                        ul.vacancy-footer__dates  
+                                            li.vacancy-footer__label Start berildi
+                                            li.vacancy-footer__date 24.07.2020
+                                        ul.vacancy-footer__dates  
+                                            li.vacancy-footer__label Muddat
+                                            li.vacancy-footer__date 1 hafta
+                                        ul.vacancy-footer__dates  
+                                            li.vacancy-footer__label Qoldi
+                                            li.vacancy-footer__date 10 soat
+
+                                    .vacancy-footer__right 
+                                        img(src="assets/images/info.svg", alt="corona" class="info-icon") 
+                                        label.vacancy-footer__verified.not-verified To'lov kafolatlanmagan
+                        .vacancy-section
+                            .vacancy-content 
+                                .vacancy-heading 
+                                    p.vacancy-heading__id ID:4256
+                                    span.vacancy-heading__top-right
+                                        span.twenty-percent -20% Start
+
+                                .vacancy-inner-heading
+                                    p.vacancy-inner-heading__job Architecture design
+                                    p.vacancy-inner__money 200 000 so'm
+
+                                .vacancy-customer
+                                    img(src="assets/images/palace.svg", alt="corona" class="palace-icon")
+                                    p.vacancy-customer__name Qashqadaryo viloyati hokimiyati
+                                    img(src="assets/images/three-stars.svg", alt="corona" class="stars-icon")
+                                
+                                .vacancy-description 
+                                    p.vacancy-description__text Kompaniyasining asosiy faoliyat turi kompyuter qurilmalari, maishiy texnika va elektronikaning chakana savdosini tashkil etish hisoblanadi.
+
+                                .vacancy-footer
+                                    .vacancy-footer__left
+                                        img(src="assets/images/clock.svg", alt="corona" class="clock-icon") 
+                                        
+                                        ul.vacancy-footer__dates  
+                                            li.vacancy-footer__label Start berildi
+                                            li.vacancy-footer__date 24.07.2020
+                                        ul.vacancy-footer__dates  
+                                            li.vacancy-footer__label Muddat
+                                            li.vacancy-footer__date 1 hafta
+                                        ul.vacancy-footer__dates  
+                                            li.vacancy-footer__label Qoldi
+                                            li.vacancy-footer__date 10 soat
+
+                                    .vacancy-footer__right 
+                                        img(src="assets/images/info.svg", alt="corona" class="info-icon") 
+                                        label.vacancy-footer__verified.not-verified To'lov kafolatlanmagan
+                        .vacancy-section
+                            .vacancy-content 
+                                .vacancy-heading 
+                                    p.vacancy-heading__id ID:4256
+                                    span.vacancy-heading__top-right
+                                        span.twenty-percent -20% Start
+
+                                .vacancy-inner-heading
+                                    p.vacancy-inner-heading__job Architecture design
+                                    p.vacancy-inner__money 200 000 so'm
+
+                                .vacancy-customer
+                                    img(src="assets/images/palace.svg", alt="corona" class="palace-icon")
+                                    p.vacancy-customer__name Qashqadaryo viloyati hokimiyati
+                                    img(src="assets/images/three-stars.svg", alt="corona" class="stars-icon")
+                                
+                                .vacancy-description 
+                                    p.vacancy-description__text Kompaniyasining asosiy faoliyat turi kompyuter qurilmalari, maishiy texnika va elektronikaning chakana savdosini tashkil etish hisoblanadi.
+
+                                .vacancy-footer
+                                    .vacancy-footer__left
+                                        img(src="assets/images/clock.svg", alt="corona" class="clock-icon") 
+                                        
+                                        ul.vacancy-footer__dates  
+                                            li.vacancy-footer__label Start berildi
+                                            li.vacancy-footer__date 24.07.2020
+                                        ul.vacancy-footer__dates  
+                                            li.vacancy-footer__label Muddat
+                                            li.vacancy-footer__date 1 hafta
+                                        ul.vacancy-footer__dates  
+                                            li.vacancy-footer__label Qoldi
+                                            li.vacancy-footer__date 10 soat
+
+                                    .vacancy-footer__right 
+                                        img(src="assets/images/info.svg", alt="corona" class="info-icon") 
+                                        label.vacancy-footer__verified.not-verified To'lov kafolatlanmagan
+                        .vacancy-section
+                            .vacancy-content 
+                                .vacancy-heading 
+                                    p.vacancy-heading__id ID:4256
+                                    span.vacancy-heading__top-right
+                                        span.twenty-percent -20% Start
+
+                                .vacancy-inner-heading
+                                    p.vacancy-inner-heading__job Architecture design
+                                    p.vacancy-inner__money 200 000 so'm
+
+                                .vacancy-customer
+                                    img(src="assets/images/palace.svg", alt="corona" class="palace-icon")
+                                    p.vacancy-customer__name Qashqadaryo viloyati hokimiyati
+                                    img(src="assets/images/three-stars.svg", alt="corona" class="stars-icon")
+                                
+                                .vacancy-description 
+                                    p.vacancy-description__text Kompaniyasining asosiy faoliyat turi kompyuter qurilmalari, maishiy texnika va elektronikaning chakana savdosini tashkil etish hisoblanadi.
+
+                                .vacancy-footer
+                                    .vacancy-footer__left
+                                        img(src="assets/images/clock.svg", alt="corona" class="clock-icon") 
+                                        
+                                        ul.vacancy-footer__dates  
+                                            li.vacancy-footer__label Start berildi
+                                            li.vacancy-footer__date 24.07.2020
+                                        ul.vacancy-footer__dates  
+                                            li.vacancy-footer__label Muddat
+                                            li.vacancy-footer__date 1 hafta
+                                        ul.vacancy-footer__dates  
+                                            li.vacancy-footer__label Qoldi
+                                            li.vacancy-footer__date 10 soat
+
+                                    .vacancy-footer__right 
+                                        img(src="assets/images/info.svg", alt="corona" class="info-icon") 
+                                        label.vacancy-footer__verified.not-verified To'lov kafolatlanmagan
+                        .vacancy-section
+                            .vacancy-content 
+                                .vacancy-heading 
+                                    p.vacancy-heading__id ID:4256
+                                    span.vacancy-heading__top-right
+                                        span.twenty-percent -20% Start
+
+                                .vacancy-inner-heading
+                                    p.vacancy-inner-heading__job Architecture design
+                                    p.vacancy-inner__money 200 000 so'm
+
+                                .vacancy-customer
+                                    img(src="assets/images/palace.svg", alt="corona" class="palace-icon")
+                                    p.vacancy-customer__name Qashqadaryo viloyati hokimiyati
+                                    img(src="assets/images/three-stars.svg", alt="corona" class="stars-icon")
+                                
+                                .vacancy-description 
+                                    p.vacancy-description__text Kompaniyasining asosiy faoliyat turi kompyuter qurilmalari, maishiy texnika va elektronikaning chakana savdosini tashkil etish hisoblanadi.
+
+                                .vacancy-footer
+                                    .vacancy-footer__left
+                                        img(src="assets/images/clock.svg", alt="corona" class="clock-icon") 
+                                        
+                                        ul.vacancy-footer__dates  
+                                            li.vacancy-footer__label Start berildi
+                                            li.vacancy-footer__date 24.07.2020
+                                        ul.vacancy-footer__dates  
+                                            li.vacancy-footer__label Muddat
+                                            li.vacancy-footer__date 1 hafta
+                                        ul.vacancy-footer__dates  
+                                            li.vacancy-footer__label Qoldi
+                                            li.vacancy-footer__date 10 soat
+
+                                    .vacancy-footer__right 
+                                        img(src="assets/images/info.svg", alt="corona" class="info-icon") 
+                                        label.vacancy-footer__verified.not-verified To'lov kafolatlanmagan
+
+                        .pagination-wrapper
+                            ul.pagination
+                                li.pagination__item 
+                                    a.pagination__link(href="#") <
+                            ul.pagination 
+                                li.pagination__item
+                                    a.pagination__link.pagination__link--active(href="#") 1
+                            ul.pagination 
+                                li.pagination__item
+                                    a.pagination__link(href="#") 2
+                            ul.pagination 
+                                li.pagination__item
+                                    a.pagination__link(href="#") 3
+                            ul.pagination 
+                                li.pagination__item
+                                    a.pagination__link(href="#") 4
+                            ul.pagination 
+                                li.pagination__item
+                                    a.pagination__link(href="#") 5
+                            ul.pagination 
+                                li.pagination__item
+                                    a.pagination__link(href="#") 6
+                            ul.pagination 
+                                li.pagination__item
+                                    a.pagination__link(href="#") 7
+                            ul.pagination 
+                                li.pagination__item
+                                    a.pagination__link(href="#") 8
+                            ul.pagination 
+                                li.pagination__item
+                                    a.pagination__link(href="#") 9
+                            ul.pagination 
+                                li.pagination__item
+                                    a.pagination__link(href="#") 10
+                            ul.pagination 
+                                li.pagination__item
+                                    a.pagination__link(href="#") >
+                            ul.pagination
+                                li.pagination__item
+                                    a.pagination__link(href="#") 942
+                            //- a.pagination__buttons(href="#") <
+                            //- a.pagination__buttons(href="#") 1
+                            //- a.pagination__buttons(href="#") 2
+                            //- a.pagination__buttons(href="#") 3
+                            //- a.pagination__buttons(href="#") 4
+                            //- a.pagination__buttons(href="#") 5
+                            //- a.pagination__buttons(href="#") 6
+                            //- a.pagination__buttons(href="#") 7
+                            //- a.pagination__buttons(href="#") 8
+                            //- a.pagination__buttons(href="#") 9
+                            //- a.pagination__buttons(href="#") 10
+                            //- a.pagination__buttons(href="#") >
+                            //- a.pagination__buttons(href="#") 942                   
+                                                
+
+                    //- =================     main section ends here ===================================
+
+                    //- =================     Right page starts here ===================================
+                    .right-page
+                        .right-page-wrapper
+                            .banner__text Telegram kanal
+                            img(src="assets/images/telegram-banner.jpg", alt="star pic" class="banner__img")
+                            a(href="https://t.me/frilansus")
+                                button.banner__btn Kanalga o'tish
+                    //- =================     Right page ends here ===================================
+
+                    //- =================     Three pages end here ===================================

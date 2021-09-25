@@ -1,0 +1,44 @@
+@import './variables'
+
+*
+  box-sizing: border-box
+  outline: none
+
+html, body
+  height: 100%
+  font-size: 10px
+
+body
+  margin: 0
+  background-color: #E5E5E5
+  font-family: Inter
+
+.wrapper
+  position: relative
+  display: flex
+  flex-direction: column
+  overflow: hidden
+  min-height: 100%
+
+.container
+  max-width: $extra-large
+  padding-left: 30px
+  padding-right: 30px
+  margin: 0 auto
+  @media (max-width: $large)
+    padding-left: 15px
+    padding-right: 15px
+
+.middle
+  flex: 1
+
+img
+  max-width: 100%
+  height: auto
+
+.pin
+  background-color: $pinColor  !important
+
+ul, ol, li, p 
+  padding: 0
+  margin: 0
